@@ -31,6 +31,7 @@ for (var i = 0; i < dbEmail.length; i++) {
   if (emailUtente == dbEmail[i]) {
     msg = console.log("Email presente nel database, accesso consentito.");
     document.getElementById('output').innerHTML = emailUtente + " presente in database. Accesso consentito.";
+    break;
   } else if (emailUtente != dbEmail[i]) {
     msg = console.log("Email non presente nel database, accesso negato.");
     document.getElementById('output').innerHTML = emailUtente + " non presente in database. Accesso negato.";
